@@ -14,7 +14,7 @@ public class CongaTest {
 
     public void before() {
 
-        conga = new Conga("LP647NY-DW", "Membranophone", "Percussion", "Struk", "Wood", "Boom", 211.23, 127.80, 408.00, 300, 760);
+        conga = new Conga("LP647NY-DW", "Membranophone", "Percussion", "Struck", "Wood", "Boom", 211.23, 127.80, 408.00, 304.8, 760);
     }
 
 
@@ -69,12 +69,12 @@ public class CongaTest {
     }
 
     @Test
-    public void getSize() {
-        assertEquals(300, conga.getDiameter());
+    public void getDiameter() {
+        assertEquals(304.8, conga.getDiameter(), 0.1);
     }
 
     @Test
-    public void getSize() {
-        assertEquals(760, conga.getHeight());
+    public void getHeight() {
+        assertEquals(760, conga.getHeight(), 0.1);
     }
 }
