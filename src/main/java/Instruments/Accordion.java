@@ -8,4 +8,8 @@ public class Accordion extends Instrument {
         super(instrumentName, instrumentType, instrumentSubType, instrumentPlayMethod, instrumentBaseMaterial, instrumentSound, hornSachId, wholesalePrice, retailPrice);
         this.noOfKeys = noOfKeys;
     }
+
+    public int getNoOfKeys() {
+        return noOfKeys;
+    }
 }

@@ -12,5 +12,17 @@ public class Laser extends Equipment {
         this.laserSpanDistance = laserSpanDistance;
         this.laserPower = laserPower;
     }
+
+    public String getLaserColour() {
+        return laserColour;
+    }
+
+    public int getLaserSpanDistance() {
+        return laserSpanDistance;
+    }
+
+    public int getLaserPower() {
+        return laserPower;
+    }
 }
 

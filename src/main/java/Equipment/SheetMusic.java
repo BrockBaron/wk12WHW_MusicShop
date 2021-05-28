@@ -10,4 +10,12 @@ public class SheetMusic extends Equipment{
         this.noOfPages = noOfPages;
         this.composer = composer;
     }
+
+    public int getNoOfPages() {
+        return noOfPages;
+    }
+
+    public String getComposer() {
+        return composer;
+    }
 }

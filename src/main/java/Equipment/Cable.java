@@ -8,4 +8,8 @@ public class Cable extends Equipment{
         super(equipmentName, equipmentBrand, equipmentType, equipmentSubType, wholesalePrice, retailPrice);
         this.wireGauge = wireGauge;
     }
+
+    public int getWireGauge() {
+        return wireGauge;
+    }
 }
