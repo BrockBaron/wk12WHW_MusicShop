@@ -12,7 +12,10 @@ public class MusicShop {
         this.stock = new ArrayList<>();
     }
 
+    // get stock count
 
-//    additmens to stock
-//    remove itemst form stock
+//    additems to stock
+//
+
+//    remove items from stock
 }
