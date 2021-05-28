@@ -19,4 +19,49 @@ public class CowbellTest {
     public void getName() {
         assertEquals("Funtune CWB-6", cowbell.getInstrumentName());
     }
+
+    @Test
+    public void getInstrumentType() {
+        assertEquals("Idiophone", cowbell.getInstrumentType());
+    }
+
+    @Test
+    public void getInstrumentSubType() {
+        assertEquals("Percussion", cowbell.getInstrumentSubType());
+    }
+
+    @Test
+    public void getInstrumentPlayMethod() {
+        assertEquals("Struck", cowbell.getInstrumentPlayMethod());
+    }
+
+    @Test
+    public void getInstrumentBaseMaterial() {
+        assertEquals("Steel", cowbell.getInstrumentBaseMaterial());
+    }
+
+    @Test
+    public void getInstrumentSound() {
+        assertEquals("Konk", cowbell.getInstrumentSound());
+    }
+
+    @Test
+    public void getHornSachId() {
+        assertEquals(111.242, cowbell.getHornSachId(), 0.1);
+    }
+
+    @Test
+    public void getWholesalePrice() {
+        assertEquals(2.50, cowbell.getWholesalePrice(), 0.1);
+    }
+
+    @Test
+    public void getRetailPrice() {
+        assertEquals(9.85, cowbell.getRetailPrice(), 0.1);
+    }
+
+    @Test
+    public void getSize() {
+        assertEquals(6, cowbell.getSize());
+    }
 }
