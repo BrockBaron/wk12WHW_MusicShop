@@ -7,4 +7,8 @@ public class Amp extends Equipment{
         super(equipmentName, equipmentBrand, equipmentType, equipmentSubType, wholesalePrice, retailPrice);
         this.power = power;
     }
+
+    public int getPower() {
+        return power;
+    }
 }
