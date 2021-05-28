@@ -1,18 +1,11 @@
 package Instruments;
 
-import Behaviour.IPlay;
-
-public class HurdyGurdy extends Instrument implements IPlay {
+public class HurdyGurdy extends Instrument  {
 
     public int noOfStrings;
 
-    public HurdyGurdy(String instrumentName, String instrumentType, String instrumentSubType, String instrumentPlayMethod, String instumentBaseMaterial, String instrumentSound, String hornSachId, double wholesalePrice, double retailPrice, int noOfStrings) {
-        super(instrumentName, instrumentType, instrumentSubType, instrumentPlayMethod, instumentBaseMaterial, instrumentSound, hornSachId, wholesalePrice, retailPrice);
+    public HurdyGurdy(String instrumentName, String instrumentType, String instrumentSubType, String instrumentPlayMethod, String instrumentBaseMaterial, String instrumentSound, String hornSachId, String sound, double wholesalePrice, double retailPrice, int noOfStrings) {
+        super(instrumentName, instrumentType, instrumentSubType, instrumentPlayMethod, instrumentBaseMaterial, instrumentSound, hornSachId, sound, wholesalePrice, retailPrice);
         this.noOfStrings = noOfStrings;
-    }
-
-
-    public void playSound(Instrument instrument) {
-
     }
 }

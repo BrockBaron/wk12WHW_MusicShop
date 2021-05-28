@@ -5,13 +5,14 @@ import Behaviour.ISell;
 
 public abstract class Instrument implements IPlay, ISell {
 
-    private String instrumnetName;
+    private String instrumentName;
     private String instrumentType;
     private String instrumentSubType;
     private String instrumentPlayMethod;
-    private String instumentBaseMaterial;
+    private String instrumentBaseMaterial;
     private String instrumentSound;
     private String hornSachId;
+    private String sound;
 
 
 
@@ -19,51 +20,23 @@ public abstract class Instrument implements IPlay, ISell {
     private double retailPrice;
 
 
-    public Instrument(String instrumentName, String instrumentType, String instrumentSubType, String instrumentPlayMethod, String instumentBaseMaterial, String instrumentSound, String hornSachId, double wholesalePrice, double retailPrice) {
-        this.instrumnetName = instrumentName;
+    public Instrument(String instrumentName, String instrumentType, String instrumentSubType, String instrumentPlayMethod, String instrumentBaseMaterial, String instrumentSound, String hornSachId, String sound, double wholesalePrice, double retailPrice) {
+        this.instrumentName = instrumentName;
         this.instrumentType = instrumentType;
         this.instrumentSubType = instrumentSubType;
         this.instrumentPlayMethod = instrumentPlayMethod;
-        this.instumentBaseMaterial = instumentBaseMaterial;
+        this.instrumentBaseMaterial = instrumentBaseMaterial;
         this.instrumentSound = instrumentSound;
         this.hornSachId = hornSachId;
+
         this.wholesalePrice = wholesalePrice;
         this.retailPrice = retailPrice;
     }
 
-    public String getInstrumnetName() {
-        return instrumnetName;
+    public String playSound() {
+        return this.instrumentSound;
     }
 
-    public String getInstrumentType() {
-        return instrumentType;
-    }
 
-    public String getInstrumentSubType() {
-        return instrumentSubType;
-    }
 
-    public String getInstrumentPlayMethod() {
-        return instrumentPlayMethod;
-    }
-
-    public String getInstumentBaseMaterial() {
-        return instumentBaseMaterial;
-    }
-
-    public String getInstrumentSound() {
-        return instrumentSound;
-    }
-
-    public String getHornSachId() {
-        return hornSachId;
-    }
-
-    public double getWholesalePrice() {
-        return wholesalePrice;
-    }
-
-    public double getRetailPrice() {
-        return retailPrice;
-    }
 }
