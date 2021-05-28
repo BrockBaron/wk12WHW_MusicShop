@@ -68,7 +68,7 @@ public class SynthesizerTest {
 
     @Test
     public void getNoOfStrings() {
-        assertEquals(4, synth.getNoOfStrings());
+        assertEquals(4, synth.getNoOfValves());
     }
     
 }

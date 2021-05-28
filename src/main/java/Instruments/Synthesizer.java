@@ -8,4 +8,8 @@ public class Synthesizer extends Instrument{
         super(instrumentName, instrumentType, instrumentSubType, instrumentPlayMethod, instrumentBaseMaterial, instrumentSound, hornSachId, wholesalePrice, retailPrice);
         this.noOfValves = noOfValves;
     }
+
+    public int getNoOfValves() {
+        return this.noOfValves;
+    }
 }
