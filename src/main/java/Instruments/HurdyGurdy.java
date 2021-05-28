@@ -8,4 +8,8 @@ public class HurdyGurdy extends Instrument  {
         super(instrumentName, instrumentType, instrumentSubType, instrumentPlayMethod, instrumentBaseMaterial, instrumentSound, hornSachId, wholesalePrice, retailPrice);
         this.noOfStrings = noOfStrings;
     }
+
+    public int getNoOfStrings() {
+        return this.noOfStrings;
+    }
 }
