@@ -11,7 +11,7 @@ public abstract class Instrument implements IPlay, ISell {
     private String instrumentPlayMethod;
     private String instrumentBaseMaterial;
     private String instrumentSound;
-    private String hornSachId;
+    private double hornSachId;
 
 
 
@@ -19,7 +19,7 @@ public abstract class Instrument implements IPlay, ISell {
     private double retailPrice;
 
 
-    public Instrument(String instrumentName, String instrumentType, String instrumentSubType, String instrumentPlayMethod, String instrumentBaseMaterial, String instrumentSound, String hornSachId, String sound, double wholesalePrice, double retailPrice) {
+    public Instrument(String instrumentName, String instrumentType, String instrumentSubType, String instrumentPlayMethod, String instrumentBaseMaterial, String instrumentSound, double hornSachId, double wholesalePrice, double retailPrice) {
         this.instrumentName = instrumentName;
         this.instrumentType = instrumentType;
         this.instrumentSubType = instrumentSubType;
@@ -38,5 +38,42 @@ public abstract class Instrument implements IPlay, ISell {
 
     public double calculateMarkUp() {
         return (this.retailPrice / this.wholesalePrice) * 100;
+    }
+
+
+    public String getInstrumentName() {
+        return instrumentName;
+    }
+
+    public String getInstrumentType() {
+        return instrumentType;
+    }
+
+    public String getInstrumentSubType() {
+        return instrumentSubType;
+    }
+
+    public String getInstrumentPlayMethod() {
+        return instrumentPlayMethod;
+    }
+
+    public String getInstrumentBaseMaterial() {
+        return instrumentBaseMaterial;
+    }
+
+    public String getInstrumentSound() {
+        return instrumentSound;
+    }
+
+    public double getHornSachId() {
+        return hornSachId;
+    }
+
+    public double getWholesalePrice() {
+        return wholesalePrice;
+    }
+
+    public double getRetailPrice() {
+        return retailPrice;
     }
 }
