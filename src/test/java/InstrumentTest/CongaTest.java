@@ -14,13 +14,13 @@ public class CongaTest {
 
     public void before() {
 
-        conga = new Conga("LP647NY-DW", "Membranophone", "Percussion", "Struck", "Wood", "Boom", 211.23, 127.80, 408.00, 304.8, 760);
+        conga = new Conga("Latin Percussion LP647NY-DW", "Membranophone", "Percussion", "Struck", "Wood", "Boom", 211.23, 127.80, 408.00, 304.8, 760);
     }
 
 
     @Test
     public void getName() {
-        assertEquals("LP647NY-DW", conga.getInstrumentName());
+        assertEquals("Latin Percussion LP647NY-DW", conga.getInstrumentName());
     }
 
     @Test
