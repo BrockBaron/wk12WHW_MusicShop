@@ -58,4 +58,13 @@ public class MusicShopTest {
         musicShop.addToStock(amp);
         assertEquals(1, musicShop.getStockCount());
     }
+
+    @Test
+    public void canRemoveFromStock() {
+        musicShop.addToStock(amp);
+        musicShop.addToStock(amp);
+        musicShop.addToStock(amp);
+        musicShop.removeFromStock(amp);
+        assertEquals(2, musicShop.getStockCount());
+    }
 }

@@ -12,25 +12,16 @@ public class MusicShop {
         this.stock = new ArrayList<>();
     }
 
-
-
     public int getStockCount() {
         return this.stock.size();
     }
 
     public void addToStock(ISell item) {
         this.stock.add(item);
-
-
-
-
     }
 
+    public void removeFromStock(ISell items) {
+        this.stock.remove(items);
+    }
 
-    // get stock count
-
-//    additems to stock
-//
-
-//    remove items from stock
 }
