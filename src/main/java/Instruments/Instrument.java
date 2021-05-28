@@ -12,7 +12,6 @@ public abstract class Instrument implements IPlay, ISell {
     private String instrumentBaseMaterial;
     private String instrumentSound;
     private String hornSachId;
-    private String sound;
 
 
 
@@ -37,6 +36,7 @@ public abstract class Instrument implements IPlay, ISell {
         return this.instrumentSound;
     }
 
-
-
+    public double calculateMarkUp() {
+        return (this.retailPrice / this.wholesalePrice) * 100;
+    }
 }
