@@ -1,10 +1,16 @@
+import Behaviour.ISell;
 import Equipment.*;
 import Instruments.*;
 import org.junit.Before;
+import org.junit.Test;
+
+import java.util.ArrayList;
+
+import static org.junit.Assert.assertEquals;
 
 public class MusicShopTest {
 
-    MusicShop shop;
+    MusicShop musicShop;
 
     Instrument cowbell;
     Instrument accordion;
@@ -17,6 +23,8 @@ public class MusicShopTest {
     Equipment cable;
     Equipment laser;
     Equipment sheet;
+
+    ArrayList<ISell> stock;
 
 
 
@@ -37,8 +45,17 @@ public class MusicShopTest {
         speakers = new Speaker("BeoLab 90", "B&O", "Speaker", "Loudspeaker",34500, 69000, 8200, 18, 1253, 735, 747, 137.37);
         sheet = new SheetMusic("Easy Solos", "Hal Leonard", "Sheet Music", "Jazz", 1.50, 12.50, 16, "Kenny G");
 
+//        ArrayList<Instrument> instruments = new ArrayList<>();
+//        ArrayList<Equipment> items = new ArrayList<>();
+//        ArrayList<ISell> stock = new ArrayList<>();
 
+        musicShop = new MusicShop();
 
-        shop = new MusicShop();
+    }
+
+    @Test
+    public void canAddToStock() {
+        musicShop.addToStock(amp);
+        assertEquals(1, musicShop.getStockCount());
     }
 }
