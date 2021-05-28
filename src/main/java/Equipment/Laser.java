@@ -4,10 +4,13 @@ public class Laser extends Equipment {
 
     public String laserColour;
     public int laserSpanDistance;
+    public int laserPower;
 
-    public Laser(String equipmentName, String equipmentType, String equipmentSubType, double wholesalePrice, double retailPrice, String laserColour, int laserSpanDistance) {
-        super(equipmentName, equipmentType, equipmentSubType, wholesalePrice, retailPrice);
+    public Laser(String equipmentName, String equipmentBrand, String equipmentType, String equipmentSubType, double wholesalePrice, double retailPrice, String laserColour, int laserSpanDistance, int laserPower) {
+        super(equipmentName, equipmentBrand, equipmentType, equipmentSubType, wholesalePrice, retailPrice);
         this.laserColour = laserColour;
         this.laserSpanDistance = laserSpanDistance;
+        this.laserPower = laserPower;
     }
 }
+
