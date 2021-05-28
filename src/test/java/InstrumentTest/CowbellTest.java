@@ -46,6 +46,11 @@ public class CowbellTest {
     }
 
     @Test
+    public void canPlayInstrument() {
+        assertEquals("Konk", cowbell.playSound());
+    }
+
+    @Test
     public void getHornSachId() {
         assertEquals(111.242, cowbell.getHornSachId(), 0.1);
     }

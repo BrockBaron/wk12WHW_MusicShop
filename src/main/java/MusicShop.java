@@ -1,9 +1,18 @@
 import Behaviour.ISell;
 
-public class MusicShop implements ISell {
+import java.util.ArrayList;
+
+public class MusicShop {
 
 
-    public double calculateMarkUp() {
-        return 0;
+    private ArrayList<ISell> stock;
+
+
+    public MusicShop() {
+        this.stock = new ArrayList<>();
     }
+
+
+//    additmens to stock
+//    remove itemst form stock
 }
